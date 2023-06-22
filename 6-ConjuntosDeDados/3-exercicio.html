@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de programação</title>
+  </head>
+  <body>
+    <h1>Array</h1>
+    <script>
+      //Mostrar na tela a soma dos números pares do array
+      var arr = new Array(1, 2, 3, 4, 0, 5, 6, 8);
+      var soma = 0;
+      for (let i = 0; i < arr.length; i++) {
+        console.log(i);
+        console.log(arr[i]);
+
+        if (!isNaN(arr[i]) && arr[i] % 2 === 0) {
+          soma += arr[i];
+        }
+      }
+      alert("A soma dos números pares é: " + soma);
+    </script>
+  </body>
+</html>

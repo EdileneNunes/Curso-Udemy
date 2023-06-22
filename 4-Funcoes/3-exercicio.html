@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Função com parâmetro</title>
+  </head>
+  <body>
+    <h1>Função com parâmetro</h1>
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+    <div id="output"></div>
+
+    <script>
+      var valor1 = prompt("Digite um número!");
+      valor1 = parseFloat(valor1);
+      let mensagem = "";
+
+      function calcular(sinal) {
+        var valor2 = prompt("Digite outro número!");
+        valor2 = parseFloat(valor2);
+        switch (sinal) {
+          case "+":
+            mensagem = alert(valor1 + valor2);
+            return mensagem;
+
+          case "-":
+            mensagem = alert(valor1 - valor2);
+            return mensagem;
+
+          case "*":
+            mensagem = alert(valor1 * valor2);
+            return mensagem;
+
+          case "/":
+            mensagem = alert(valor1 / valor2);
+            return mensagem;
+        }
+      }
+    </script>
+  </body>
+</html>

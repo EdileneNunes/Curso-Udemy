@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lógica de programação</title>
+  </head>
+  <body>
+    <h1>Array</h1>
+    <div id="output"></div>
+    <script>
+      // Mostrar na tela todos os produtos disponíveis para compra
+
+      var produtos = new Array(
+        "caneta",
+        "lapis",
+        "tesoura",
+        "borracha",
+        "caderno",
+        "livro"
+      );
+
+      produtos.push("compasso", "cartolina");
+
+      var output = document.querySelector("#output");
+
+      var msg = "";
+      for (var i = 0; i < produtos.length; i++) {
+        msg += "produtos " + (i + 1) + ": " + produtos[i] + "<br>";
+      }
+
+      output.innerHTML = msg;
+    </script>
+  </body>
+</html>

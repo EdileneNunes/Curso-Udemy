@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Calculadora</h1>
     <button onclick="somar()">+</button>
     <button onclick="subtrair()">-</button>
@@ -14,41 +14,39 @@
     <button onclick="dividir()">/</button>
     <div id="output"></div>
     <script>
-        //Taboada simples
-        var resultado
-        var n1 = prompt("Digite um número!");
-        n1 = parseFloat(n1);
+      //Taboada simples
+      var resultado;
+      var n1 = prompt("Digite um número!");
+      n1 = parseFloat(n1);
 
-        function somar() {
-            var n2 = prompt("Digite outro número!");
-            n2 = parseFloat(n2);
-            resultado = n1 + n2;
-            output.innerHTML = resultado;
-        }
+      function somar() {
+        var n2 = prompt("Digite outro número!");
+        n2 = parseFloat(n2);
+        resultado = n1 + n2;
+        output.innerHTML = resultado;
+      }
 
-        function subtrair() {
-            var n2 = prompt("Digite outro número!");
-            n2 = parseFloat(n2);
-            resultado = n1 - n2;
-            output.innerHTML = resultado;55
-        }
+      function subtrair() {
+        var n2 = prompt("Digite outro número!");
+        n2 = parseFloat(n2);
+        resultado = n1 - n2;
+        output.innerHTML = resultado;
+        55;
+      }
 
-        function multiplicar() {
-            var n2 = prompt("Digite outro número!");
-            n2 = parseFloat(n2);
-            resultado = n1 * n2;
-            output.innerHTML = resultado;
-        }
+      function multiplicar() {
+        var n2 = prompt("Digite outro número!");
+        n2 = parseFloat(n2);
+        resultado = n1 * n2;
+        output.innerHTML = resultado;
+      }
 
-        function dividir() {
-            var n2 = prompt("Digite outro número!");
-            n2 = parseFloat(n2);
-            resultado = n1 / n2;
-            output.innerHTML = resultado;
-        }
-    
-    
-
+      function dividir() {
+        var n2 = prompt("Digite outro número!");
+        n2 = parseFloat(n2);
+        resultado = n1 / n2;
+        output.innerHTML = resultado;
+      }
     </script>
-</body>
+  </body>
 </html>

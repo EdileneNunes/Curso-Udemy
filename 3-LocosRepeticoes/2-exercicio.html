@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Laço de repetição</h1>
-    
-</body>
-<script>
-/*Para este exercício, mostre na tela todos os anos a partir de 1004 até o ano 2017, pulando de quatro em quatro anos.
+  </body>
+  <script>
+    /*Para este exercício, mostre na tela todos os anos a partir de 1004 até o ano 2017, pulando de quatro em quatro anos.
 Por exemplo: 1004, 1008, 1012. E assim por diante.
 É como mostrar os anos bissextos, mas sem as regras para descobrir se um ano é bissexto ou não.
 (vamos imaginar que se o ano é múltiplo de quatro, ele é bissexto).*/
 
+    var ano = 1004;
 
-var ano = 1004;
+    while (ano <= 2017) {
+      document.write(ano + "<br>");
+      ano += 4;
+    }
 
-while(ano <= 2017) {
-    document.write(ano + '<br>');
-    ano += 4;
-}
-
-
-
-
-/*var ano = 1004;
+    /*var ano = 1004;
 
 while(ano <= 2017) {
     document.write(ano + '<br>');
@@ -41,7 +36,5 @@ while(indice <=2017 ) {
     indice= indice + 4
     
 }*/
-
-
-</script>
+  </script>
 </html>
