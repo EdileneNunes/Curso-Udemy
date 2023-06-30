@@ -8,10 +8,27 @@
   </head>
   <body>
     <h1>Praticando objeto</h1>
+
+    <div id="output"></div>
+
     <script>
       /*
 Mostrar na tela os dados de um produto específico contendo quantidade em estoque e preço.
 Esses devem ser agrupados em um objeto*/
+
+var produto1 = new Object();
+produto1.nome = "Caneta";
+produto1.preco = 2.2;
+produto1.estoque = 10;
+
+var msg = '';
+
+msg += 'nome: ' + produto1.nome + '<br>';
+msg += 'preco: ' + produto1.preco + '<br>';
+msg += 'estoque: ' + produto1.estoque + '<br>';
+
+document.querySelector('#output').innerHTML = msg;
+
     </script>
   </body>
 </html>
